@@ -6,3 +6,4 @@ generated/prisma/
 .agents/
 .claude/
 .windsurf/
+/generated/prisma
