@@ -13,6 +13,16 @@ datasource db {
 }
 model usuarios {
   id Int @id @default(autoincrement())
+  nome String
   email String @unique
-  senha String @unique
+  cpf String @unique
+  senha String 
+  
+}
+model personagens {
+  id Int @id @default(autoincrement())
+  nome String
+  pokemon_principal String
+  mega_evolucao String?
+  gigantamax String?
 }
