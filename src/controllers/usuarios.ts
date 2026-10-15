@@ -8,9 +8,9 @@ import { handleErrors } from "../helpers/handleErrors";
 export default {
 login: async (request: Request, response: Response) => {
         try {
-            const { nome, email, cpf, senha } = request.body;
+            const { email, senha } = request.body;
 
-            if(!nome || !email || !cpf || !senha){
+            if(!email || !senha){
                 return response.status(400).json("Dados incompletos");
             }
 
