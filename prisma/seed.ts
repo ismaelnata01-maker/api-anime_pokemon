@@ -5,9 +5,9 @@ async function main() {
     const usuario = await prisma.usuarios.create({
         data:{
             nome: "Admin",
-            email: "admin@gmail.com",
+            email: "a@gmail.com",
             cpf:"12345678912",
-            senha: bcrypt.hashSync("123456", +process.env.BCRYPT_ROUNDS!),
+            senha: bcrypt.hashSync("1234", +process.env.BCRYPT_ROUNDS!),
         },
     });
 
